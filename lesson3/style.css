@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(198, 233, 245);
+}
+
+section {
+  width: 100%;
+}
+
+div {
+  display: inline-block;
+  border: 1px solid black;
+  width: 30%;
+  height: 100%;
+  margin: 15px;
+  /* divlerin yuxarida qalmasi ucun ⬇ */
+  vertical-align: top;
+}
+p {
+  background-color: chocolate;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  display: inline-block;
+  text-align: left;
+  border: 0.5px solid black;
+  background-color: coral;
+  color: rgb(37, 33, 33);
+  padding: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* zaman ve comment linklerini bir-birinden ayira bilmedim. Destek lazim olacaq. */
