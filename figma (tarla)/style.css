@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+:root {
+  --background: rgb(243, 133, 54);
+  --color: rgb(210, 105, 30);
+  --div-background: rgb(255, 243, 194);
+}
+body {
+  background-color: rgb(252, 201, 140);
+}
+
+section {
+  margin: 1px;
+  border-radius: 1px;
+}
+
+#tarla {
+  width: 139.16px;
+  height: 54.02px;
+  margin: 12px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  background-color: rgb(252, 220, 208);
+  margin-bottom: 5px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.a-tags {
+  color: black;
+  text-decoration: white;
+}
+
+nav {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+#user,
+#cart {
+  font-size: 25px;
+  cursor: pointer;
+  > p {
+    cursor: pointer;
+  }
+}
+
+/* header hissesini bitirib kecdim section hissesine. */
+
+section {
+  margin-bottom: 5px;
+}
+
+.karusel {
+  display: flex;
+  background-color: var(--background);
+  width: 100%;
+}
+
+#kuasaan {
+  width: 45%;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+#pastry {
+  font-size: 25px;
+}
+
+#pastry-h1 {
+  margin-top: 15px;
+  word-spacing: 55px;
+  font-size: 55px;
+}
+.pastry-items {
+  background-color: var(--background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  border-radius: 55px;
+  padding: 25px 5px 25px 5px;
+  margin-left: 1%;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.pastry-items:active {
+  background-color: white;
+  color: black;
+}
+
+.right-img {
+  position: relative;
+
+  > .arrows {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/* "fresh pastry kits" hissesini de bitirdim. */
+
+.how-it-works {
+  background-color: var(--div-background);
+  margin: 1px;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  > .top-div {
+    display: flex;
+  }
+}
+.croissant,
+.dingdong,
+.getbaked,
+.credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 15px;
+  cursor: pointer;
+  /* transition'u ozum sonradan elave etdim */
+  transition: 0.5s;
+  > h3,
+  p {
+    font-size: 25px;
+  }
+
+  > img {
+    display: flex;
+  }
+}
+
+.croissant:active,
+.dingdong:active,
+.getbaked:active,
+.credit:active {
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+#hiw_button {
+  color: blue;
+  background-color: white;
+  width: 35%;
+  font-size: 1.5rem;
+  border: 2px solid blue;
+  border-radius: 55px;
+  padding: 15px 35px 15px 35px;
+  margin-left: 1%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+
+#hiw_button:active {
+  background-color: white;
+  color: black;
+}
+
+#hiw-title {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+/* how it works-reklam hissesini de bitirdim */
+.yummy-cakes {
+  border-radius: 2px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(227, 165, 122);
+  gap: 15px;
+}
+
+.yummy-cake1 {
+  max-width: 100%;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    margin-right: 15px;
+  }
+}
+
+.yummy-cake2 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  align-items: flex-start;
+  justify-content: center;
+
+  > button {
+    font-size: 35px;
+    color: blue;
+    background-color: white;
+    width: 45%;
+    font-size: 1.5rem;
+    border: 2px solid blue;
+    border-radius: 55px;
+    padding: 15px 35px 15px 35px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  > button:active {
+    background-color: white;
+    color: black;
+  }
+  p {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+}
+
+/* yummy-cakes hissesi bitdi*/
+
+.gridlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grids {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+
+  > .grid1 {
+    > button {
+      color: blue;
+      background-color: white;
+      width: 45%;
+      font-size: 1.5rem;
+      border: 2px solid blue;
+      border-radius: 55px;
+      padding: 5px 5px 5px 5px;
+      margin-left: 1%;
+      margin-top: 2%;
+      margin-bottom: 1%;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+  }
+}
