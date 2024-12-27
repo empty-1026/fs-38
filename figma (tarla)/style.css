@@ -6,13 +6,13 @@
 }
 
 :root {
-  --background: #fff;
+  --background: rgb(248, 236, 228);
   --color: #fff;
   --div-background: rgb(255, 243, 194);
 }
 
 body {
-  margin: 2% 2%;
+  margin: 2% auto;
 }
 
 section {
@@ -74,8 +74,9 @@ section {
 
 .karusel {
   display: flex;
-  background-color: var(--background);
+  background-color: rgba(255, 195, 160, 255);
   width: 100%;
+  margin: 0;
 }
 
 #kuasaan {
@@ -121,7 +122,7 @@ section {
     cursor: pointer;
     > img {
       width: 100%;
-      height:100%;
+      height: 100%;
     }
   }
 }
@@ -192,7 +193,7 @@ section {
 #hiw-title {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 /* how it works-reklam hissesini de bitirdim */
 .yummy-cakes {
@@ -219,7 +220,7 @@ section {
 .yummy-cake2 {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15%;
@@ -295,7 +296,8 @@ section {
   }
 
   > p {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
+    font-size: 100%;
   }
 }
 
@@ -304,7 +306,8 @@ section {
 .fullscreen {
   width: 100%;
   height: auto;
-
+  background-color: var(--background);
+  border-radius: 1px;
   > img {
     width: 100%;
   }
@@ -312,3 +315,139 @@ section {
 
 /* fullscreen bitdi */
 
+.secgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1%;
+  background-color: var(--background);
+}
+
+.gridingrid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 2%;
+  padding: 5%;
+  height: 100%;
+  > img {
+    /* border-radius: 15%; */
+    margin: 0 auto;
+    gap: 15px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > h2,
+  p {
+    text-align: center;
+    font-size: 145%;
+  }
+}
+
+/* gird-2 bitdi. */
+
+#mixed {
+  /* bunun ne oldugunu, nece yazdgimi ve neye aid oldugunu bilmirem. Amma silme lazim olacaq. */
+  width: 100%;
+  border: 1px solid black;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.grid-container {
+  background-color: #f5ede7;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item:first-child {
+  > img {
+    width: 95%;
+    margin-left: 5%;
+  }
+}
+
+.grid-item:nth-child(2) {
+  margin-left: 2%;
+  margin-right: 2%;
+  > p,
+  span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  > p {
+    font-size: 5vh;
+    margin-top: 5%;
+  }
+
+  > span {
+    font-size: 3vh;
+  }
+
+  > button {
+    color: black;
+    background-color: white;
+    width: 35%;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 55px;
+    padding: 15px 35px 15px 35px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    cursor: pointer;
+  }
+}
+
+.grid-item:nth-child(3) {
+  margin-left: 2%;
+  margin-right: 2%;
+  > p,
+  span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  > p {
+    font-size: 5vh;
+    margin-top: 5%;
+  }
+
+  > span {
+    font-size: 3vh;
+  }
+
+  > button {
+    color: black;
+    background-color: white;
+    width: 35%;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 55px;
+    padding: 15px 35px 15px 35px;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    cursor: pointer;
+  }
+}
+
+.grid-item:last-child {
+  > img {
+    width: 95%;
+    margin-right: 5%;
+    border-radius: 5%;
+  }
+}
+
+/* starlar elave olunmadan non-regular grid-container hissesi bitdi. */
