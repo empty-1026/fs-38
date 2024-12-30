@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -12,18 +13,32 @@
 }
 
 body {
-  margin: 2% auto;
+  margin: 2% 10%;
+  background-color: #f5ede7;
 }
 
-section {
-  margin: 1px;
-  border-radius: 1px;
-  background-color: #ffc3a0;
+.right-img {
+  > img {
+    width: 100%;
+    height: auto;
+  }
+  position: relative;
+  > .arrows {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    cursor: pointer;
+    width: 15%;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 #tarla {
-  width: 139.16px;
-  height: 54.02px;
+  width: 10%;
+  height: 4%;
   margin: 12px;
 }
 
@@ -49,8 +64,8 @@ header {
 
 nav {
   position: absolute;
-  right: 45px;
-  top: 45px;
+  right: 12%;
+  top: 6%;
   display: flex;
   gap: 15px;
   font-size: 20px;
@@ -70,6 +85,9 @@ nav {
 
 section {
   margin-bottom: 5px;
+  margin: 1px;
+  border-radius: 1px;
+  background-color: #ffc3a0;
 }
 
 .karusel {
@@ -87,23 +105,24 @@ section {
 }
 
 #pastry {
-  font-size: 25px;
+  font-size: 1vw;
+  font-family: "dm sans";
 }
 
 #pastry-h1 {
-  margin-top: 15px;
-  word-spacing: 55px;
-  font-size: 55px;
+  margin-top: 5%;
+  word-spacing: 12%;
+  font-size: 5vw;
+  font-family: "roboto";
 }
 .pastry-items {
   background-color: var(--background);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   border-radius: 55px;
-  padding: 25px 5px 25px 5px;
+  padding: 5% 2% 5% 2%;
   margin-left: 1%;
-  margin-top: 5%;
-  margin-bottom: 1%;
+  margin-top: 12%;
   cursor: pointer;
   transition: 0.1s;
 }
@@ -113,19 +132,11 @@ section {
   color: black;
 }
 
+.left-text,
 .right-img {
-  position: relative;
-  > .arrows {
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
-    cursor: pointer;
-    > img {
-      width: 100%;
-      height: 100%;
-    }
-  }
+  width: 100%;
 }
+
 /* "fresh pastry kits" hissesini de bitirdim. */
 
 .how-it-works {
@@ -156,6 +167,7 @@ section {
   > h3,
   p {
     font-size: 25px;
+    font-family: "dm sans";
   }
 
   > img {
@@ -192,7 +204,7 @@ section {
 
 #hiw-title {
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "roboto";
   font-size: 2rem;
 }
 /* how it works-reklam hissesini de bitirdim */
@@ -250,6 +262,7 @@ section {
   p {
     font-size: 25px;
     margin-top: 15px;
+    font-family: "dm sans";
   }
 }
 
@@ -296,7 +309,7 @@ section {
   }
 
   > p {
-    font-family: sans-serif;
+    font-family: "dm sans";
     font-size: 100%;
   }
 }
@@ -347,12 +360,19 @@ section {
     text-align: center;
     font-size: 145%;
   }
+  > h2 {
+    font-family: "roboto";
+  }
+
+  > p {
+    font-family: "dm sans";
+  }
 }
 
 /* gird-2 bitdi. */
 
 #mixed {
-  /* bunun ne oldugunu, nece yazdgimi ve neye aid oldugunu bilmirem. Amma silme lazim olacaq. */
+  /* bunun ne oldugunu, nece yazdgimi ve neye aid oldugunu bilmirem. Amma silende butun kodum korlandi ona gore saxladim. */
   width: 100%;
   border: 1px solid black;
 
@@ -367,6 +387,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  background-color: var(--background);
 }
 
 .grid-item:first-child {
@@ -379,19 +400,16 @@ section {
 .grid-item:nth-child(2) {
   margin-left: 2%;
   margin-right: 2%;
-  > p,
-  span {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
+
   > p {
+    font-family: "roboto";
     font-size: 5vh;
     margin-top: 5%;
   }
 
   > span {
     font-size: 3vh;
+    font-family: "dm sans";
   }
 
   > button {
@@ -412,18 +430,14 @@ section {
 .grid-item:nth-child(3) {
   margin-left: 2%;
   margin-right: 2%;
-  > p,
-  span {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
   > p {
+    font-family: "roboto";
     font-size: 5vh;
     margin-top: 5%;
   }
 
   > span {
+    font-family: "dm sans";
     font-size: 3vh;
   }
 
@@ -451,3 +465,76 @@ section {
 }
 
 /* starlar elave olunmadan non-regular grid-container hissesi bitdi. */
+
+.slide-container {
+  background-color: #fff;
+  margin-top: 50%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  > h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto";
+  }
+}
+.slideimages {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 20%);
+  gap: 2%;
+
+  > img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* slide bolumu bitdi. */
+footer {
+  margin-top: 10%;
+  font-family: "roboto";
+  background-color: #f5ede7;
+}
+
+.lastgriditems {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footerstart {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 45px;
+}
+.undertext {
+  font-size: 30px;
+}
+
+.gmail {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  > button {
+    font-size: 100%;
+    padding: 2% 10% 2% 10%;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  /* border: 1px solid black; */
+}
