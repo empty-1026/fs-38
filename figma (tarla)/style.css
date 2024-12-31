@@ -210,13 +210,14 @@ section {
 /* how it works-reklam hissesini de bitirdim */
 .yummy-cakes {
   border-radius: 2px;
-  margin: 5px;
+  margin: 0 5px;
   display: flex;
   flex-direction: column;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: rgb(227, 165, 122);
   gap: 15px;
+  width: 100%;
 }
 
 .yummy-cake1 {
@@ -269,6 +270,7 @@ section {
 /* yummy-cakes hissesi bitdi*/
 
 .gridlist {
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -289,7 +291,7 @@ section {
 .grid-3,
 .grid-4,
 .grid-5,
-.grid-6 {
+.grid-6 {x
   > img {
     width: 100%;
   }
@@ -516,7 +518,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
   font-size: 45px;
 }
 .undertext {
@@ -537,4 +539,19 @@ footer {
     margin-top: 5%;
   }
   /* border: 1px solid black; */
+}
+
+.lastgriditem2,
+.lastgriditem3,
+.lastgriditem4 {
+  > p,
+  h5 {
+    margin: 0 2px;
+    cursor: pointer;
+  }
+}
+
+.lastgriditem1,
+.lastgriditem5 {
+  >img{}
 }
