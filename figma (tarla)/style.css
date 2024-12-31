@@ -291,7 +291,7 @@ section {
 .grid-3,
 .grid-4,
 .grid-5,
-.grid-6 {x
+.grid-6 {
   > img {
     width: 100%;
   }
